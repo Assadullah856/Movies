@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500;700;900&family=Space+Grotesk:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(0deg, #1E1E1E, #1E1E1E);
+}
+
+/*Nav*/
+
+.navbar .container {
+    height: auto;
+}
+
+.navbar .navbar-toggler {
+    border: 2px solid #FF0000;
+}
+
+.navbar .container .logo a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FF0000;
+}
+
+.collapse .navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.nav-item .nav-link:hover {
+    color: #FF0000;
+    transition: 1s;
+}
+
+/*main*/
+main .container {
+    height: auto;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .container .row .left .favorites h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+main .container .row .left .card-container {
+    width: 100%;
+    height: 180px;
+}
+
+.card-container .card {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 90px #000000;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.information {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-top: 140px;
+    flex-direction: column;
+}
+
+
+.play {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 154px;
+    margin-right: 40px;
+}
+
+.card h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.card p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-top: -10px;
+}
+
+.card .fa-circle-play {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.fa-circle-play:hover {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+.announcement {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.announcement .card {
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 90px #000000;
+}
+
+.card .btn {
+    width: 148px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 60px;
+
+}
+
+.btn .play-symbol {
+    color: #000000;
+}
+
+.btn span {
+    margin-left: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+.card .btn:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+    transition: 1s;
+}
+
+.football-title {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-end;
+    margin-top: -84px;
+    margin-right: 20px;
+}
+
+.football-title h3 {
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-top: 45px;
+}
+
+.football-title p {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-top: 90px;
+}
+
+.continue-watching, .action-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    height: auto;
+}
+
+.continue-watching h3, .action-title > h3{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    color: #FFFFFF;
+}
+ 
+.card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.card-group .card {
+    border: none;
+    position: relative;
+    margin: 0 10px;
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 0px 50px 100px #000000;
+    overflow: hidden;
+}
+
+.card .card-body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+    color: #FFF;
+}
+
+.card-body h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+
+.button-div {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 28px;
+    margin-top: 135px;
+}
+
+
+.button-div button {
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 50px;
+    transition: 1s;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.button-div #button:hover {
+    background-color: #FF0000;
+    color: #FFF;
+}
+
+#play-small {
+    display: none;
+}
+
+.carousel-control-prev{
+    width: 20px;
+    margin-left: 10px;
+}
+
+#button-carousel-left .fa-chevron-left:hover, #button-carousel-right .fa-chevron-right:hover{
+    color: #FFF;
+}
+
+.carousel-control-next{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.escuro{
+    margin-top: 140px;
+    width: 100%;
+    height: 44px;
+    background: rgba(30, 30, 30, 0.6);
+}
+
+.button{
+    margin-top: 100px;
+}
+
+#carousel{
+    width: 20px;
+}

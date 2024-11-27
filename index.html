@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>CineMovie</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="assets/CineMovie.png" type="image/x-icon">
+
+  <!-- Bootstrap-CSS v5.3.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivel.css">
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/72d1354d66.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!--header-->
+  <header>
+    <!--nav-->
+    <nav class="navbar navbar-expand-sm pt-2">
+
+      <!--container-->
+      <div class="container">
+        <div class="logo">
+          <a href="#">CineMovie</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggler navigation">
+          <span class="fa-solid fa-bars" style="color: #FFF;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav me-2 ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Animes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--end vcof container-->
+    </nav>
+    <!--end of nav-->
+  </header>
+  <!--end of header-->
+  <main class="pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 left">
+          <div class="favorites">
+            <h3>Favoritos</h3>
+          </div>
+          <div class="card-container mb-4">
+            <div class="card"
+              style="background: url(assets/lacasapapel.jpg); background-size: cover; background-position: center;">
+              <div class="information">
+                <h4>La Casa de Papel</h4>
+                <p>Drama</p>
+              </div>
+              <div class="play">
+                <i class="fa-solid fa-circle-play fa-lg"></i>
+              </div>
+
+            </div>
+          </div>
+          <div class="card-container mb-4">
+            <div class="card" style="background: url(assets/Fury.jpg); background-size: cover;">
+              <div class="information">
+                <h4>Coração de Ferro</h4>
+                <p>Ação</p>
+              </div>
+              <div class="play">
+                <i class="fa-solid fa-circle-play fa-lg"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-container mb-4">
+            <div class="card"
+              style="background: url(assets/stranger.jpg);  background-size: cover; background-position: center;">
+              <div class="information">
+                <h4>Stranger Things</h4>
+                <p>Fantasia</p>
+              </div>
+              <div class="play">
+                <i class="fa-solid fa-circle-play fa-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 right pt-5 pb-4">
+          <div class="announcement">
+            <div class="card"
+              style="background: url(assets/pexels-tembela-bohle-1884574.jpg); background-size: cover; background-position: center;">
+
+              <button class="btn">
+                <i class="fa-solid fa-circle-play fa-lg play-symbol"> </i>
+                <span>Watch Now</span>
+              </button>
+            </div>
+            <div class="football-title">
+              <h3>Campeonato Inglês</h3>
+              <p>Ao Vivo</p>
+            </div>
+          </div>
+
+          <div class="continue-watching pt-4">
+            <h3>Continuar Assistindo</h3>
+          </div>
+          <div class="carousel-watching">
+            <div id="carouselExample" class="carousel  slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-group">
+
+                    <div class="card"
+                      style="border-radius: 30px; background: url(assets/Fury.jpg); background-size: cover; background-position: center;">
+                      <div class="card-body">
+                        <h5 class="card-title">Coração de Ferro</h5>
+                        <p class="card-text">Ação</p>
+                      </div>
+                      <div class="button-div">
+                        <button id="button">
+                          <i class="fa-solid fa-circle-play fa-lg" style="color: #000;"></i>
+                          Assista agora
+                        </button>
+                        <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+
+                      </div>
+                    </div>
+                    <div class="card"
+                      style="border-radius: 30px; background: url(assets/baki.jpg); background-size: cover; background-position: center;">
+                      <div class="card-body">
+
+                        <h5 class="card-title">Baki, O campeão</h5>
+                        <p class="card-text">Anime</p>
+                      </div>
+                      <div class="button-div">
+                        <button id="button">
+                          <i class="fa-solid fa-circle-play fa-lg" style="color: #000;"></i>
+                          Assista agora
+                        </button>
+                        <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-title pt-2">
+            <h3>Ação</h3>
+          </div>
+          <div id="carouselExampleCaptions" class="carousel slide mb-4">
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-group">
+
+                  <div class="card"
+                    style="border-radius: 30px; background: url(assets/Esquema-de-Risco.jpg); background-size: cover; background-position: center;">
+                    <div class="card-body">
+                      <h5 class="card-title">Esquema de Risco</h5>
+                      <p class="card-text">Filme - 2023</p>
+                    </div>
+                    <div class="button-div">
+                      <button style="width: auto; background: transparent;">
+
+                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+
+
+                      </button>
+                      <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+                    </div>
+                  </div>
+                  <div class="card"
+                    style="border-radius: 30px; background: url(assets/lista-terminal.jpg); background-size: cover; background-position: center;">
+                    <div class="card-body">
+
+                      <h5 class="card-title">A Lista Terminal</h5>
+                      <p class="card-text">Série - 2022</p>
+                    </div>
+                    <div class="button-div">
+                      <button style="width: auto; background: transparent;">
+                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+
+                      </button>
+                      <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-group">
+
+                  <div class="card"
+                    style="border-radius: 30px; background: url(assets/seal-team.jpg); background-size: cover; background-position: center;">
+                    <div class="card-body">
+                      <h5 class="card-title">SEAL Team</h5>
+                      <p class="card-text">Série - 2017</p>
+                    </div>
+                    <div class="button-div">
+                      <button style="width: auto; background: transparent;">
+                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                      </button>
+                      <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+                    </div>
+                  </div>
+                  <div class="card"
+                    style="border-radius: 30px; background: url(assets/emancipation.jpeg); background-size: cover; background-position: center;">
+                    <div class="card-body">
+                      <h5 class="card-title">Emancipation</h5>
+                      <p class="card-text">Filme - 2022</p>
+                    </div>
+                    <div class="button-div">
+                      <button style="width: auto; background: transparent;">
+                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                      </button>
+                      <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-group">
+
+                  <div class="card"
+                    style="border-radius: 30px; background: url(assets/anonimo.jpg); background-size: cover; background-position: center;">
+                    <div class="card-body">
+                      <h5 class="card-title">Anônimo</h5>
+                      <p class="card-text">Filme - 2021</p>
+                    </div>
+                    <div class="button-div">
+                      <button style="width: auto; background: transparent;">
+                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                      </button>
+                      <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+                    </div>
+                  </div>
+                  <div class="card"
+                    style="border-radius: 30px; background: url(assets/9-1-1.jpg); background-size: cover; background-position: center;">
+                    <div class="card-body">
+
+                      <h5 class="card-title">9-1-1</h5>
+                      <p class="card-text">Série - 2018</p>
+                    </div>
+                    <div class="button-div">
+                      <button style="width: auto; background: transparent;">
+                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i>
+                      </button>
+                      <i class="fa-solid fa-circle-play fa-lg" style="color: #FFF;" id="play-small"></i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev" id="carousel">
+              <span class="fa-solid fa-chevron-left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next" id="carousel">
+              <span class="fa-solid fa-chevron-right" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
